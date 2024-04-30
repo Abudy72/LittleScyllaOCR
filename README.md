@@ -3,7 +3,8 @@
 - [Installation](#Installation)
 - [Notes](#Notes)
 - [Contributing](#contributing)
-<a id="introduction"></a>
+- [Debug Mode](#Debug)
+
 # LittleScyllaOCR
 LittleScyllaOCR is a Python application used to parse smite post-match stats screenshots for statistical analysis. 
 It is built using [PyTesseract](https://pypi.org/project/pytesseract/) which is a wrapper for Google's [Tesseract](https://en.wikipedia.org/wiki/Tesseract_(software)).
@@ -37,8 +38,10 @@ pip install prompt-toolkit
 ## Notes:
 1. Create a new folder to store processed images.
 2. Navigate to  `LittleScyllaOCR/EngineOCR` and create a `/temp` folder.
-3. Navigate to `LittleScyllaOCR/EngineOCR` and create a `debug` folder. (Required when enabling the debug flag.)
 
+## Debug
+3. Navigate to `LittleScyllaOCR/EngineOCR/temp` and create a `/debug` folder. (Required when enabling the debug flag.)
+4. Navigate to `LittleScyllaOCR/EngineOCR/temp/debug` and create a `/custom` folder. (Required when enabling debug flag)
 ### Supported Enums.
 - Current supported output formats (Enums `OUTPUT.type`:
   - Console: `OUTPUT.CONSOLE` (default)
@@ -68,7 +71,8 @@ Description of the `startOCR`:
 - `outputFormat`: Choose one of the supported enums.
 - Returns: Description of the return value.
 
-
+### Debug Mode
+- ``
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
